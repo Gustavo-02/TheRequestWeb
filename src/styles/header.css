@@ -1,0 +1,118 @@
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    transition: 0.5s;
+}
+
+header .logo
+{
+    color: rgb(180, 0, 0);
+    font-weight: 700;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+header .logo span
+{
+    color: #ffffff;
+}
+
+header .navegation
+{
+    position: relative;
+    display: flex;
+}
+
+header .navegation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navegation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+header.sticky
+{
+    background: rgb(32, 32, 32);
+    padding: 10px 100px;
+    box-shadow: 0 10px 60px #656565;
+}
+
+header .navegation li a:hover
+{
+    color: #a90000;
+    text-decoration:overline;
+}
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navegation
+    {
+        display: none;
+    }
+    header .navegation.active
+    {
+        width: 100%;
+        height: calc(100% - 77px);
+        position: fixed;
+        top: 77px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #000;
+    }
+    header .navegation li
+    {
+        font-size: 2.6em;
+        padding-top: 3%;
+    }
+    header .navegation li a
+    {
+        margin-left: 0;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../images/menu.png);
+        background-size: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(../images/fechar.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+}

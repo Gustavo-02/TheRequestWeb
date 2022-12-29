@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Request</title>
+
+    <link rel="icon" href="../images/Icone.png">
+    <link rel="stylesheet" href="../styles/produtosCss.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="logo">The <span>Request</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navegation">
+            <li><a href="../index.html">Jogo</a></li>
+            <li><a href="../paginas/produtos.html">Galeria</a></li>
+            <li><a href="../index.html#criador">Sobre o criador</a></li>
+            <li><a href="../paginas/contato.html">Contato</a></li>
+        </ul>
+    </header>
+
+    <section class="produto" id="produto">
+        <div class="produtRow">
+            <div class="imgProduto" id="tomate">
+                <img src="../images/1.png">
+            </div>
+            <div class="imgProduto" id="tomate">
+                <img src="../images/2.png">
+            </div>
+        </div>
+
+
+        <div class="produtRow">
+            <div class="imgProduto" id="tomate">
+                <img src="../images/3.png">
+            </div>
+            <div class="imgProduto" id="tomate">
+                <img src="../images/4.png">
+            </div>
+        </div>
+
+
+        <div class="produtRow">
+            <div class="imgProduto" id="tomate">
+                <img src="../images/5.png">
+            </div>
+            <div class="imgProduto" id="tomate">
+                <img src="../images/6.png">
+            </div>
+        </div>
+
+
+        <div class="produtRow">
+            <div class="imgProduto" id="tomate">
+                <img src="../images/7.png">
+            </div>
+            <div class="imgProduto" id="tomate">
+                <img src="../images/8.png">
+            </div>
+        </div>
+
+
+        <div class="produtRow">
+            <div class="imgProduto" id="tomate">
+                <img src="../images/9.png">
+            </div>
+            <div class="imgProduto" id="tomate">
+                <img src="../images/GAME.png">
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="footer">
+        <div class="fot">
+            <ul class="menu">
+                <li><a href="../index.html">Jogo</a></li>
+                <li><a href="../index.html#criador">Sobre o criador</a></li>
+                <li><a href="../paginas/produtos.html">Galeria</a></li>
+                <li><a href="../paginas/contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navegation = document.querySelector('.navegation');
+            menuToggle.classList.toggle('active');
+            navegation.classList.toggle('active');
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

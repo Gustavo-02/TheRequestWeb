@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Request</title>
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="./images/Icone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">The <span>Request</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navegation">
+            <li><a href="./index.html">Jogo</a></li>
+            <li><a href="./paginas/produtos.html">Galeria</a></li>
+            <li><a href="./index.html#criador">Sobre o criador</a></li>
+            <li><a href="./paginas/contato.html">Contato</a></li>
+        </ul>
+    </header>
+
+    <section class="sobreOrta" id="sobreOrta">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                    <img src="./images/1.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/2.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/3.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/4.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/5.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/6.png" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="banner" id="banner" style="background-image: url(./images/Background.png);">
+        <div class="content">
+            <h2>The Request</h2>
+            <p>
+                Medo, adrenalina, emoção, suspense. <br>
+                Essas são apenas algumas caracteristicas que o jogo te proporciona.<br>
+            </p>
+            <a href="./paginas/produtos.html" class="btn">VER GALERIA</a>
+        </div>
+    </section>
+
+    <section class="separar" id="sobre">
+        <div class="row">
+            <div class=" col50">
+                <h2 class="textoTitulo"><span>H</span>istória do jogo</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" style="background-image: url(./images/Background.png);">
+        <div class="row">
+            <div class=" col50">
+                <p>
+                    The request é um jogo de terror em primeira pessoa, que mistura o ambiente digital com o real.</br></br>
+
+                    O jogo conta a história de Gustavo Hyzant, um ex detetive da policia,</br></br>
+
+                    que decidiu sair devido a brigas internas e também por conta de a lei sempre agir a favor dos criminosos.</br></br>
+
+                    Ele passou cinco anos agindo como justiceiro solitário, buscando criminosos e fazendo justiça com as proprias mãos, por todos esses anos ele passou por situações extremas e de quase morte,</br></br>
+
+                    mas um dia tudo mudou, quando a filha do seu melhor amigo Hank é sequestrada, ele promete que fara de tudo para salva-lá, até mesmo dar a vida.</br></br>
+
+                    A principio tudo parece ser apenas um caso de sequestro simples, porém tudo acaba sendo muito mais complexo e sombrio.</br></br>
+
+                    E quanto mais o senhor Hyzant entra neste caso, mais perigoso fica e o pesadelo aumenta mais e mais.</br></br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="separar" id="criador">
+        <div class="row">
+            <div class=" col50">
+                <h2 class="textoTitulo"><span>O </span>Criador</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" style="background-image: url(./images/Background.png);">
+        <div class="row">
+            <div class=" col50">
+                <p>
+                    Me chamo Gustavo Santos, tenho 20 anos e sou o criador deste jogo.</br></br>
+
+                    Durante minha vida toda sempre quis explorar o mundo de criação de jogos, neste mundo podemos contar histórias, criar vidas,</br></br>
+
+                    podemos ser os Deuses do nosso proprio mundo, gostar de jogos não é um disperdicio, mas sim abraçar a ideia de viver varias vidas, de ter varias experiencias diferentes.</br></br>
+
+                    Atualmente trabalho como programador de simuladores e softwares em realidade virtual em uma empresa da minha cidade.</br></br>
+
+                    Possuo grande conhecimento em Unity, C# e modelagem 3D, e por conta de possuir conhecimento e acabar tendo a ideia da história durante um sonho</br></br>
+
+                    decidi começar a torna este jogo uma realidade.</br></br>
+
+                    Sempre que tiver coisas novas do jogo vou atualizando por aqui.</br></br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="footer">
+        <div class="fot">
+            <ul class="menu">
+                <li><a href="#banner">Jogo</a></li>
+                <li><a href="#criador">Sobre o criador</a></li>
+                <li><a href="./paginas/produtos.html">Galeria</a></li>
+                <li><a href="./paginas/contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navegation = document.querySelector('.navegation');
+            menuToggle.classList.toggle('active');
+            navegation.classList.toggle('active');
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

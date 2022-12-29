@@ -1,0 +1,61 @@
+.swiper body {
+    position: relative;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.swiper {
+    background: rgba(47, 47, 47, 0);
+    width: 100%;
+    padding-top: 0;
+    margin-top: 1%;
+    padding-bottom: 5px;
+}
+
+.swiper-wrapper{
+    position: relative;
+    width: 15% !important;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.sobreOrta .swiper-wrapper {
+    position: relative;
+    width: 45% !important;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-color: rgb(47, 47, 47);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    -webkit-box-reflect: below 1px linear-grandient(transparent,transparent,#0006);
+    outline: .2rem solid #ccc;
+    outline-offset: -1rem;
+    transition: 0.5s;
+}
+
+.swiper-slide:hover{
+    outline-offset: 0;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .swiper-wrapper{
+        width: 50% !important;
+    }
+    .sobreOrta .swiper-wrapper {
+        width: 90% !important;
+        
+    }
+}
