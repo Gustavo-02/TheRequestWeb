@@ -26,9 +26,9 @@
     width: 60%;
     color: white;
     background-color: #0000009f;
-    border: solid #22e91b 1px;
+    border: solid #a60000 1px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #22e91b;
+    box-shadow: 0 0 10px #e50000;
     margin-bottom: 2rem;
     padding: 0.8rem 0.8rem;
     font-size: 1.4rem;
@@ -48,9 +48,9 @@
     height: 30%;
     color: white;
     background-color: #0000009f;
-    border: solid #22e91b 1px;
+    border: solid #a70000 1px;
     border-radius: 10px;
-    box-shadow: 0 0 10px #22e91b;
+    box-shadow: 0 0 10px #df0101;
     margin-bottom: 2rem;
     padding: 0.8rem 0.8rem;
     font-size: 1.4rem;
@@ -59,14 +59,14 @@
 .Button{
     font-size: 1.4em;
     color: #000;
-    background-color: #22e91b;
+    background-color: #e00202;
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
     text-decoration: none;
     letter-spacing: 2px;
     cursor: pointer;
-    border: solid #22e91b 1px;
+    border: solid #9f0000 1px;
     transition: 0.5s;
 }
 
@@ -74,7 +74,7 @@
     color: #fff;
     letter-spacing: 7px;
     background-color: #000;
-    box-shadow: 0 0 50px #22e91b;
+    box-shadow: 0 0 50px #a10000;
     cursor: pointer;
 }
 
